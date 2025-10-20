@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Healthy Living</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Healthy Living</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="fruits.html">Fruits</a>
+        <a href="vegetables.html">Vegetables</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h2>Contact Us</h2>
+    <p>Fill the form below and we'll get back to you (this form validates in the browser only).</p>
+    <form id="contactForm" class="form">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required minlength="2">
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p id="formStatus" class="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Healthy Living — Jaswanth</p>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
